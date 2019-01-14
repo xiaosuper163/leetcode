@@ -4,6 +4,9 @@ class Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        
+        # time complexity: O(n2)
+        
         if len(nums) < 3:
             return []
         

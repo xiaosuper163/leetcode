@@ -6,6 +6,8 @@ class Solution:
         :rtype: int
         """
         
+        # time complexity: O(n2)
+        
         if len(nums) < 3:
             return []
         
