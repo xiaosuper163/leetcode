@@ -1,10 +1,11 @@
+// @9 binary search
+
 /**
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
  */
 
-// @9
 // The code in this solution is very robust.
 // It works for all scienarios.
 // Runtime complexity: Object(log n)

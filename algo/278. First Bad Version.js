@@ -1,4 +1,4 @@
-// @9
+// @9 binary search
 
 /**
  * Definition for isBadVersion()
