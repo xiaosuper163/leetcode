@@ -5,7 +5,7 @@
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum = function(candidates, target) {
+var combinationSum2 = function(candidates, target) {
     // 1. definition
     var helper = function(res, collection, index, remain_target) {
         if (index > candidates.length) {
@@ -25,10 +25,12 @@ var combinationSum = function(candidates, target) {
                 continue;
             }
             
+            if (i!=index && candidates[i] === candidates[i-1]) {
+                continue;
+            }
+            
             collection.push(candidates[i]);
-            // since it allows using one number multiple times,
-            // we parse i instead of i+1 into the recursive function call
-            helper(res, collection, i, remain_target - candidates[i]);
+            helper(res, collection, i+1, remain_target - candidates[i]);
             collection.pop();
         }
     }
@@ -41,5 +43,4 @@ var combinationSum = function(candidates, target) {
     candidates.sort();
     helper(res, [], 0, target);
     return res;
-    
 };
