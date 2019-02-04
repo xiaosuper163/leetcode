@@ -1,3 +1,13 @@
+# The space usage is not optimal
+# We can use O(logn) extra space instead of O(n)
+# Time complexity is still O(nlogn)
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -6,6 +16,18 @@
 #         self.right = None
 
 class Solution:
+    def sortedListToBST(self, head):
+        """
+        :type head: ListNode
+        :rtype: TreeNode
+        """
+        temp = head
+        nums = []
+        while (temp):
+            nums.append(temp.val)
+            temp = temp.next
+        return self.sortedArrayToBST(nums)
+
     def sortedArrayToBST(self, nums):
         """
         :type nums: List[int]
@@ -33,4 +55,4 @@ class Solution:
         right = self.sortedArrayToBST(nums[midIndex+1:])
         mid.left = left
         mid.right = right
-        return mid
+        return mid        
