@@ -34,3 +34,32 @@ public class Solution {
         return dummy.next;
     }
 }
+
+/*
+public class Solution {
+    public ListNode DeleteDuplicates(ListNode head) {
+        if (head == null || head.next == null) return head;
+        var dummy = new ListNode(0);
+        var cursor = head;
+        var idxCursor = dummy;
+        ListNode pre = null;
+        int cnt = 1;
+        while (cursor != null) {
+            if (pre == null || cursor.val != pre.val) {
+                if (cnt <= 1 && pre != null) {
+                    idxCursor.next = pre;
+                    idxCursor = idxCursor.next;
+                }
+                pre = cursor;
+                cnt = 1;
+            } else {
+                cnt++;
+            }
+            cursor = cursor.next;
+        }
+        if (cnt <= 1) idxCursor.next = pre;
+        else idxCursor.next = null;
+        return dummy.next;
+    }
+}
+*/

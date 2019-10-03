@@ -22,3 +22,32 @@ public class Solution {
         return pre+1;
     }
 }
+
+/*
+public class Solution {
+    public int RemoveDuplicates(int[] nums)
+    {
+        if (nums.Length <= 2) return nums.Length;
+        int pre = nums[0], cnt = 1, index = 0;
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] != pre)
+            {
+                if (cnt <= 2)
+                {
+                    nums[index++] = pre;
+                }
+                pre = nums[i];
+                cnt = 1;
+            }
+            else if (cnt <= 2)
+            {
+                nums[index++] = pre;
+                cnt++;
+            }
+        }
+        if (cnt <= 2) nums[index++] = nums[nums.Length - 1];
+        return index;
+    }
+}
+ */
