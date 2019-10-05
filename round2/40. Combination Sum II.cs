@@ -3,7 +3,7 @@ public class Solution {
         if (remain == 0) res.Add(new List<int>(tempList));
         if (remain < 0) return;
         for (int i=index; i<nums.Length; i++) {
-            if (i != index && nums[i] == nums[i-1] && ) continue;
+            if (i != index && nums[i] == nums[i-1]) continue;
             tempList.Add(nums[i]);
             BackTrack(nums, res, tempList, remain-nums[i], i+1);
             tempList.RemoveAt(tempList.Count-1);
