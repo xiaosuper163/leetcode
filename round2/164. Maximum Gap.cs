@@ -38,3 +38,37 @@ public class Solution {
         return res;
     }
 }
+
+/*
+public class Solution {
+    public int MaximumGap(int[] nums) {
+        if (nums.Length <= 1) return 0;
+        int mx = int.MinValue, mn = int.MaxValue;
+        foreach (var num in nums) {
+            mx = Math.Max(mx, num);
+            mn = Math.Min(mn, num);
+        }
+        
+        int bucketSize = (mx-mn) / nums.Length + 1;
+        int bucketCnt = (mx-mn) / bucketSize + 1;
+        int[] bucketMx = Enumerable.Repeat(int.MinValue, bucketCnt).ToArray();
+        int[] bucketMn = Enumerable.Repeat(int.MaxValue, bucketCnt).ToArray();
+        foreach (var num in nums) {
+            int bucketIdx = (num - mn) / bucketSize;
+            bucketMx[bucketIdx] = Math.Max(bucketMx[bucketIdx], num);
+            bucketMn[bucketIdx] = Math.Min(bucketMn[bucketIdx], num);
+        }
+        
+        int res = 0;
+        int lastBucketIdx = -1;
+        for(int i=0; i<bucketCnt; i++) {
+            if (bucketMx[i] == int.MinValue) continue;
+            if (lastBucketIdx != -1) {
+                res = Math.Max(bucketMn[i]-bucketMx[lastBucketIdx], res);
+            }
+            lastBucketIdx = i;
+        }
+        return res;
+    }
+}
+*/
