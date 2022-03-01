@@ -17,3 +17,8 @@
   - 133 Clone Graph,
   - 200 Number of Islands,
   - _1197 Minimum Knight Moves_
+- **DFS**:
+  - 39 Combination Sum
+  - 40 Combination Sum II
+  - 131 Palindrome Partitioning
+  - 60 Permutation Sequence
