@@ -21,4 +21,8 @@
   - 39 Combination Sum
   - 40 Combination Sum II
   - 131 Palindrome Partitioning
+  - 46 Permutations
   - 60 Permutation Sequence
+  - 51 N-Queens
+  - 127 Word Ladder
+  - 126 Word Ladder II
