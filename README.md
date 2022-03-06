@@ -26,3 +26,13 @@
   - 51 N-Queens
   - 127 Word Ladder
   - 126 Word Ladder II
+- **Linked List & Array**
+  - 206 Reverse Linked List
+  - 25 Reverse Nodes in k-Group
+  - 138 Copy List with Random Pointer
+  - 141 Linked List Cycle
+  - 53 Maximum Subarray
+  - 1755 Closest Subsequence Sum
+  - 88 Merge Sorted Array
+  - 349 Intersection of Two Arrays
+  - 4 Median of Two Sorted Arrays
