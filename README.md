@@ -37,3 +37,9 @@
   - 4 Median of Two Sorted Arrays
 - **Two Pointers**
   - 75 Sort Colors
+  - 1 Two Sum
+  - 167 Two Sum II - Input Array Is Sorted
+  - 15 3Sum
+  - _170 Two sum III data structure design_
+  - 16 3Sum Closest
+  - 18 4Sum
