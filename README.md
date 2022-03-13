@@ -43,3 +43,7 @@
   - _170 Two sum III data structure design_
   - 16 3Sum Closest
   - 18 4Sum
+- **Data Structure**
+  - 341 Flatten Nested List Iterator
+  - 146 LRU Cache
+  - 263 Ugly Number
