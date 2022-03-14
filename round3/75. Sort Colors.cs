@@ -6,11 +6,14 @@ public class Solution {
         int i = 0;
         while (i <= right) {
             if (nums[i] == 0) {
-                if (i == left) {
-                    i ++;
-                } else {
-                    Swap(nums, left, i);
-                }                
+                // if (i == left) {
+                //     i ++;
+                // } else {
+                //     Swap(nums, left, i);
+                // }                
+                // left ++;
+                Swap(nums, left, i);
+                i++;
                 left ++;
             } else if (nums[i] == 2) {
                 Swap(nums, i, right);

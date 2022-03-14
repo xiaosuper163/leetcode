@@ -47,3 +47,12 @@
   - 341 Flatten Nested List Iterator
   - 146 LRU Cache
   - 263 Ugly Number
+- **Dynamic Programming**
+  - 120 Triangle
+  - 64 Minimum Path Sum
+  - 62 Unique Paths
+  - 63 Unique Paths II
+  - 70 Climbing Stairs
+  - 300 Longest Increasing Subsequence
+  - 279 Perfect Squares
+  - 368 Largest Divisible Subset
