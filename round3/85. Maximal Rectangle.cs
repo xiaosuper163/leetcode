@@ -28,7 +28,7 @@ public class Solution {
             } else {
                 int prev = st.Pop();
                 res = Math.Max(res, heights[prev] * (st.Count == 0 ? i : i - st.Peek() - 1)); 
-                // !!! st is empty when a height of 0 is reached
+                // !!! st is empty when the first height of 0 is reached
                 // because  no height can be smaller than 0
                 i --;
             }
